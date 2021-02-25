@@ -36,3 +36,39 @@ function ArrToStr(){
     let b = (a.join(" "));
     console.log(b);
 }
+
+//QUESTION NO. 6
+function FindWord(){
+    let words = ["paper","table", "exam", "hall"];
+    for(word of words){
+        if(word == "exam"){
+            console.log(`The word "exam" is at index ${words.indexOf(word)}`);
+            return true;
+        }
+
+    }
+}
+
+//QUESTION NO. 7
+function carsCount(){
+    const cars= [{name:'ford'}, {name:'lexus'}, {name:'maserati'}, {name:'ford'}];
+    let arr=cars.map((car)=>{
+        return car.name;
+    })
+    console.log(arr);
+    
+    const duplicate=arr.filter((value,index)=>{
+        return arr.indexOf(value)!=index;
+    });
+    console.log(duplicate);
+    }
+
+//QUESTION NO.3
+function IsoToLocal(){
+    const IsoTime = "2021-02-23T17:56:17.366+00:00"
+    console.log(`ISO time is: ${IsoTime}`);
+    let LocalTime = new Date(IsoTime);
+    console.log(`Local time is: ${LocalTime}`);
+}
+
+//QUESTION NO. 8
